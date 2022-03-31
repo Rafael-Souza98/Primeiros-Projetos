@@ -93,7 +93,7 @@ margin-top: 5%;
 }
 .redes{ 
 display: grid ;
-grid-template-columns: 2fr 1fr;
+grid-template-columns: 2.5fr 1fr;
 grid-template-rows: 70%;
 transition: transform 2s;
 }
@@ -135,7 +135,7 @@ h3{
 
 /* LAYOUT RESPONSIVO 460PX*/
 @media(max-width: 460px) {
-    /*----------HEADER--------------*/
+
     .icons{
         width: 75%;
         margin: auto;
@@ -147,7 +147,7 @@ h3{
         height: 5vh;
         
     }
-    /*----CORPO-----------*/
+    
     .description1{
         padding-bottom: 15%;
         max-width: 100%;
@@ -185,16 +185,11 @@ h3{
             text-align: center;
             font-size: 100%;
         }
-        .redes{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin: auto;
-        }
+        
         .skills{
         max-width: 100%;
         justify-content: space-evenly;
-        height: 6vh;
+        height: vh;
         } 
         .onda3{
             max-height: 11vh;
@@ -211,19 +206,24 @@ h3{
             font-size: 100%;
             font-style:normal;
         }
-        /*---------------CORPO----------*/
+    
         .redes{
             display: flex;
-            justify-content: center;
-            height: 6vh;
+            justify-content: space-between;
+            height:
         }
+        .redes > img{
+            height: 10%;
+        }
+    
         .onda3{
             height: 100%;
             padding-top: 10;
             
         }
-    }
-    }
+        }
+ }
+
         
     @media(max-width: 760px){
         .container, .about{
@@ -244,12 +244,10 @@ h3{
             text-align: center;
         }
         .redes{
-            max-width: 40%;
-            margin: auto;
-            padding-top: 10%;
+            height: 30%;
         }
         .skills{
-            height: 20%;
+            height: 50%;
             margin: auto;
             
     
@@ -264,6 +262,6 @@ h3{
             transform: scale(1);
         }
         100%{
-            transform: scale(1.2);
+            transform: scale(1.3);
         }
     }
